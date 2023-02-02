@@ -58,9 +58,10 @@ const data = {
 
 const options = {};
 
-const radarChart = new RadarScopeJS(data, options);
-```
+const chartContainer = createRadarChart(data, options);
 
+document.body.appendChild(chartContainer);
+```
 
 For more information on how to use RadarScopeJS, please see the documentation and examples included with the library.
 
@@ -73,4 +74,3 @@ If you need help with the library, you can open an issue on the [GitHub reposito
 ## License 📜
 
 RadarScopeJS is open-source software licensed under the [ISC License](LICENSE).
-
