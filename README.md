@@ -29,38 +29,50 @@ import { createRadarChart } from "radar-scope-js";
 
 Then, you can use the library to create a radar chart, like this:
 
-```javascript
-const data = {
-  labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling"],
-  datasets: [
-    {
-      label: "My First dataset",
-      backgroundColor: "rgba(179,181,198,0.2)",
-      borderColor: "rgba(179,181,198,1)",
-      pointBackgroundColor: "rgba(179,181,198,1)",
-      pointBorderColor: "#fff",
-      pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgba(179,181,198,1)",
-      data: [65, 59, 90, 81, 56, 55],
-    },
-    {
-      label: "My Second dataset",
-      backgroundColor: "rgba(255,99,132,0.2)",
-      borderColor: "rgba(255,99,132,1)",
-      pointBackgroundColor: "rgba(255,99,132,1)",
-      pointBorderColor: "#fff",
-      pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgba(255,99,132,1)",
-      data: [28, 48, 40, 19, 96, 27],
-    },
-  ],
-};
+```html
+<div id="radar-chart-container"></div>
 
-const options = {};
+<script>
+  import { createRadarChart } from "radar-scope-js";
 
-const chartContainer = createRadarChart(data, options);
+  const data = {
+    labels: [
+      "Eating",
+      "Drinking",
+      "Sleeping",
+      "Designing",
+      "Coding",
+      "Cycling",
+    ],
+    datasets: [
+      {
+        label: "My First dataset",
+        backgroundColor: "rgba(179,181,198,0.2)",
+        borderColor: "rgba(179,181,198,1)",
+        pointBackgroundColor: "rgba(179,181,198,1)",
+        pointBorderColor: "#fff",
+        pointHoverBackgroundColor: "#fff",
+        pointHoverBorderColor: "rgba(179,181,198,1)",
+        data: [65, 59, 90, 81, 56, 55],
+      },
+      {
+        label: "My Second dataset",
+        backgroundColor: "rgba(255,99,132,0.2)",
+        borderColor: "rgba(255,99,132,1)",
+        pointBackgroundColor: "rgba(255,99,132,1)",
+        pointBorderColor: "#fff",
+        pointHoverBackgroundColor: "#fff",
+        pointHoverBorderColor: "rgba(255,99,132,1)",
+        data: [28, 48, 40, 19, 96, 27],
+      },
+    ],
+  };
 
-document.body.appendChild(chartContainer);
+  const options = {};
+
+  const chartContainer = createRadarChart(data, options);
+  document.getElementById("radar-chart-container").appendChild(chartContainer);
+</script>
 ```
 
 For more information on how to use RadarScopeJS, please see the documentation and examples included with the library.
