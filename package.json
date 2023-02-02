@@ -1,6 +1,6 @@
 {
   "name": "radar-scope-js",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Create stunning and dynamic radar charts with ease using RadarScope, the versatile open-source JavaScript library built with Chart.js. With customizable scales and multiple datasets support, bring your data to life with dynamic visuals.",
   "main": "index.js",
   "repository": "https://github.com/bcostaaa01/radar-scope-js.git",

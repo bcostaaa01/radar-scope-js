@@ -24,7 +24,7 @@ npm install radar-scope-js
 To use RadarScopeJS in your project, simply import the library into your JavaScript file(s) where you want to use it:
 
 ```javascript
-import RadarScopeJS from "radar-scope-js";
+import { createRadarChart } from "radar-scope-js";
 ```
 
 Then, you can use the library to create a radar chart, like this:
