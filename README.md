@@ -2,6 +2,10 @@
 
 RadarScopeJS is an open-source JavaScript library for creating dynamic and customizable radar charts. With support for multiple datasets and adjustable scales, RadarScopeJS makes it easy to bring your data to life with stunning visuals.
 
+![npm downloads](https://img.shields.io/npm/dw/radar-scope-js?style=flat-square)
+
+![package version](https://img.shields.io/npm/v/radar-scope-js?style=flat-square)
+
 ## Features 🚀
 
 - Support for multiple datasets
