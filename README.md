@@ -37,7 +37,7 @@ Then, you can use the library to create a radar chart, like this:
 <div id="radar-chart-container"></div>
 
 <script>
-  import { createRadarChart } from "radar-scope-js";
+  const createRadarChart = require("radar-scope-js");
 
   const data = {
     labels: [
