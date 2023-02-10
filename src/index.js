@@ -17,4 +17,4 @@ function createRadarChart(data, options) {
   return chartContainer;
 }
 
-export { createRadarChart };
+module.exports = createRadarChart;
